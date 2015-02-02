@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'termbox/ffi/version'
+require 'termbox/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'termbox-ffi'
-  spec.version       = Termbox::Ffi::VERSION
+  spec.version       = Termbox::VERSION
   spec.authors       = ["Ashley Towns"]
   spec.email         = ["ashleyis@me.com"]
   spec.summary       = %q{FFI wrapper around termbox}
