@@ -5,7 +5,7 @@ module Termbox
   extend FFI::Library
 
   # TODO: This is a hack..
-  ffi_lib Dir[File.join(File.dirname(__FILE__), "/../../ext/termbox/build/src/*.{so,dylib}")].first
+  ffi_lib Dir[File.join(File.dirname(__FILE__), "/../ext/termbox/build/src/*.{so,dylib}")].first
 
   TB_KEY_F1 =           (0xFFFF - 0)
   TB_KEY_F2 =           (0xFFFF - 1)
