@@ -1,4 +1,6 @@
 require 'termbox/version'
+require 'termbox/event'
+require 'termbox/cell'
 require 'ffi'
 
 module Termbox
