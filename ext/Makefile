@@ -1,7 +1,8 @@
 all:
+	cd termbox
 	./waf configure
 	./waf
 clean:
-	rm -rvf build
+	rm -rvf termbox/build
 install:
 	echo "dummy makefile"
