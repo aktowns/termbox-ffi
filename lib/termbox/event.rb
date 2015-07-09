@@ -9,7 +9,9 @@ module Termbox
            :key,  :uint16,
            :ch,   :uint32,
            :w,    :int32,
-           :h,    :int32
+           :h,    :int32,
+           :x,    :int32,
+           :y,    :int32
   end
   
 end

@@ -30,6 +30,12 @@ module Termbox
   TB_KEY_ARROW_DOWN       = (0xFFFF - 19)
   TB_KEY_ARROW_LEFT       = (0xFFFF - 20)
   TB_KEY_ARROW_RIGHT      = (0xFFFF - 21)
+  TB_KEY_MOUSE_LEFT       = (0xFFFF - 22)
+  TB_KEY_MOUSE_RIGHT      = (0xFFFF - 23)
+  TB_KEY_MOUSE_MIDDLE     = (0xFFFF - 24)
+  TB_KEY_MOUSE_RELEASE    = (0xFFFF - 25)
+  TB_KEY_MOUSE_WHEEL_UP   = (0xFFFF - 26)
+  TB_KEY_MOUSE_WHEEL_DOWN = (0xFFFF - 27)
   
   TB_KEY_CTRL_TILDE       = 0x00
   TB_KEY_CTRL_2           = 0x00
@@ -105,6 +111,7 @@ module Termbox
   TB_INPUT_CURRENT = 0
   TB_INPUT_ESC     = 1
   TB_INPUT_ALT     = 2
+  TB_INPUT_MOUSE   = 4
   
   TB_OUTPUT_CURRENT   = 0
   TB_OUTPUT_NORMAL    = 1
