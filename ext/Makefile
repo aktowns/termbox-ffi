@@ -1,4 +1,5 @@
 all:
+	pwd
 	cd termbox && waf configure
 	cd termbox && waf
 clean:
