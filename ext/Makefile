@@ -1,6 +1,5 @@
 all:
-	( cd termbox && ./waf configure )
-	( cd termbox && ./waf )
+	true
 clean:
 	rm -rvf termbox/build
 install:
