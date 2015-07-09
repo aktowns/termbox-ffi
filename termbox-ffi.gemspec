@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Termbox::VERSION
   spec.authors       = ["Ashley Towns"]
   spec.email         = ["ashleyis@me.com"]
-  spec.summary       = %q{FFI wrapper around termbox}
-  spec.description   = %q{FFI wrapper around termbox, includes the c library}
-  spec.homepage      = ''
+  spec.summary       = %q{FFI wrapper around Termbox}
+  spec.description   = %q{FFI wrapper around Termbox, includes the C library}
+  spec.homepage      = 'https://github.com/aktowns/termbox-ffi'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
