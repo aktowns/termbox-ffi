@@ -103,6 +103,7 @@ module Termbox
   
   TB_EVENT_KEY    = 1
   TB_EVENT_RESIZE = 2
+  TB_EVENT_MOUSE  = 3
   
   TB_EUNSUPPORTED_TERMINAL = -1
   TB_EFAILED_TO_OPEN_TTY   = -2
