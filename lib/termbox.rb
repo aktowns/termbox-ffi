@@ -111,24 +111,6 @@ module Termbox
   TB_OUTPUT_256       = 2
   TB_OUTPUT_216       = 3
   TB_OUTPUT_GRAYSCALE = 4
-
-  # The tb_cell struct as returned by libtermbox
-  class Cell < FFI::Struct
-    layout :ch, :int,
-           :fg, :uint16,
-           :bg, :uint16
-  end
-
-  # The tb_event struct as returned by libtermbox
-  class Event < FFI::Struct
-    layout :type, :uint8,
-           :mod,  :uint8,
-           :key,  :uint16,
-           :ch,   :uint32,
-           :w,    :int32,
-           :h,    :int32
-  end
-
   
   attach_function :tb_init,                 [],                                      :int
   attach_function :tb_shutdown,             [],                                      :void
