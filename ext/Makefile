@@ -1,7 +1,6 @@
 all:
-	pwd
-	cd termbox && waf configure
-	cd termbox && waf
+	cd termbox && ./waf configure
+	cd termbox && ./waf
 clean:
 	rm -rvf termbox/build
 install:
