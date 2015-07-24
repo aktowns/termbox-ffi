@@ -1,0 +1,3 @@
+[submodule "ext/termbox"]
+	path = ext/termbox
+	url = git@github.com:nsf/termbox.git

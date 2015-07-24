@@ -8,16 +8,16 @@ Gem::Specification.new do |spec|
   spec.version       = Termbox::VERSION
   spec.authors       = ["Ashley Towns"]
   spec.email         = ["ashleyis@me.com"]
-  spec.summary       = %q{FFI wrapper around termbox}
-  spec.description   = %q{FFI wrapper around termbox, includes the c library}
-  spec.homepage      = ''
+  spec.summary       = %q{FFI wrapper around Termbox}
+  spec.description   = %q{FFI wrapper around Termbox, includes the C library}
+  spec.homepage      = 'https://github.com/aktowns/termbox-ffi'
   spec.license       = 'MIT'
 
-  spec.files         = `git ls-files -z`.split("\x0")
+  spec.files         = `git ls-files -z`.split("\x0") + Dir[File.join('ext', '**', '*')]
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
-  spec.extensions = %w[ext/termbox/extconf.rb]
+  spec.extensions = %w[ext/extconf.rb]
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
