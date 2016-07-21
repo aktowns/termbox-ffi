@@ -122,6 +122,8 @@ module Termbox
   TB_OUTPUT_216       = 3
   TB_OUTPUT_GRAYSCALE = 4
   
+  TB_EOF = -1
+  
   attach_function :tb_init,                 [],                                      :int
   attach_function :tb_shutdown,             [],                                      :void
   attach_function :tb_width,                [],                                      :int
@@ -137,5 +139,8 @@ module Termbox
   attach_function :tb_select_output_mode,   [:int],                                  :int
   attach_function :tb_peek_event,           [Event, :int],                           :int
   attach_function :tb_poll_event,           [Event],                                 :int
+  attach_function :tb_utf8_char_length,     [:char],                                 :int
+  attach_function :tb_utf8_char_to_unicode, [:pointer, :string],                     :int
+  attach_function :tb_utf8_unicode_to_char, [:string, :uint32],                      :int
   
 end
