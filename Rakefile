@@ -4,8 +4,11 @@ desc "Clean the Termbox library build files"
 task :clean do
   system 'cd ext && make clean'
 end
+task clobber: :clean
 
 desc "Compile the Termbox library"
 task :compile do
   system 'cd ext && make all'
 end
+task build: :compile
+
