@@ -43,7 +43,7 @@ git submodule update --init --recursive
 
 ### Building
 
-Once the project is properly cloned, the Termbox library must be build with `bundle exec rake compile`.
+Once the project is properly cloned, the Termbox library must be built with `bundle exec rake compile`.
 
 To run examples, use `bundle exec ruby ./examples/FILENAME`
 
